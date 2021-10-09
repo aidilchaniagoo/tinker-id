@@ -1,0 +1,23 @@
+baseUR: "https://tinker.id"
+title: "Tinker"
+theme: "PaperMod"
+
+params:
+  profileMode:
+    enabled: true
+    title: "Aidil Putra"
+    subtitle: "Passionate about linux"
+    imageUrl: "/assets/images/djancuk.jpeg"
+    imageWidth: 120
+    imageHeight: 120
+    buttons:
+      - name: Blog
+        url: "/blog"
+
+  socialIcons: # optional
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/aidil-putra-chaniago-082423103/"
+    - name: "github"
+      url: "https://github.com/aidilchaniagoo"
+    - name: "rss"
+      url: "https://tinker.id/index.xml"

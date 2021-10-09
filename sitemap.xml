@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/categories/</loc>
+    <loc>/2021/10/09/2020-10-09-cara-install-winbox-di-mac-os-big-sur/</loc>
+    <lastmod>2021-10-09T21:16:11+07:00</lastmod>
   </url><url>
     <loc>/</loc>
+    <lastmod>2021-10-09T21:16:11+07:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2021-10-09T21:16:11+07:00</lastmod>
+  </url><url>
+    <loc>/categories/</loc>
   </url><url>
     <loc>/tags/</loc>
   </url>

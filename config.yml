@@ -1,18 +1,53 @@
 baseUR: "https://tinker.id"
-title: "Tinker"
+title: "Personal Blog"
 theme: "PaperMod"
 
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+# googleAnalytics: UA-123-45
+
+minify:
+    disableXML: true
+    minifyOutput: true
+
+permalinks:
+  posts: "/:year/:month/:day/:slug/"
+
 params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  DateFormat: "2006-01-02"
+  defaultTheme: dark
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: false
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+
+  author:
+    - Aidil Putra
+
+  label:
+    text: "Personal Blog"
+    icon: "/assets/images/notebook.png"
+    iconHeight: 35
+
   profileMode:
     enabled: true
     title: "Aidil Putra"
-    subtitle: "Passionate about linux"
+    subtitle: "Passionate about Linux, Networking, Virtualization"
     imageUrl: "/assets/images/djancuk.jpeg"
     imageWidth: 120
     imageHeight: 120
-    buttons:
-      - name: Blog
-        url: "/blog"
 
   socialIcons: # optional
     - name: "linkedin"
@@ -21,3 +56,14 @@ params:
       url: "https://github.com/aidilchaniagoo"
     - name: "rss"
       url: "https://tinker.id/index.xml"
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20

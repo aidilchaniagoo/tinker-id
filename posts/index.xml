@@ -5,14 +5,14 @@
     <link>/posts/</link>
     <description>Recent content in Posts on Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 09 Oct 2021 21:16:11 +0700</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>2020 10 09 Cara Install Winbox Di Mac Os Big Sur</title>
-      <link>/2021/10/09/2020-10-09-cara-install-winbox-di-mac-os-big-sur/</link>
-      <pubDate>Sat, 09 Oct 2021 21:16:11 +0700</pubDate>
+      <title>Cara install Winbox pada macOS</title>
+      <link>/2021/10/09/cara-install-winbox-pada-macos/</link>
+      <pubDate>Sat, 09 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>/2021/10/09/2020-10-09-cara-install-winbox-di-mac-os-big-sur/</guid>
-      <description>hello world</description>
+      <guid>/2021/10/09/cara-install-winbox-pada-macos/</guid>
+      <description>Secara default winbox hanya bisa di jalankan di sistem operasi Windows. Namun kita tetap bisa menggunakan nya pada macOS dengan menggunakan wine.</description>
     </item>
     
   </channel>

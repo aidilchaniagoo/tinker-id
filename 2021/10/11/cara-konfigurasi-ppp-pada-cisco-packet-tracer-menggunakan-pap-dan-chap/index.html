@@ -6,7 +6,7 @@
 <title>Cara Konfigurasi ppp pada Cisco Packet Tracer menggunakan pap dan chap | Personal Blog</title>
 <meta name=keywords content="cisco packet tracer,ppp,chap,pap,ospf">
 <meta name=description content="Artikel ini akan membahas bagaimana mengkonfigurasi ppp pada cisco packet tracer menggunakan authentikasi pap dan chap dan sebagai tambahan koneksi koneksi yang melewati network yang bebeda akan di cover oleh routing ospf.
-Detail  r1 Se2/0 10.0.0.1/8, Fa0/0 192.168.10.0/24 r2 Se2/0 10.0.0.2/8, Se3/0 20.0.0.2/8 r3 Se3/0 20.0.0.1/8, Fa0/0, 192.168.20.0/24 pc-aidil-1 192.168.10.2/24 pc-aidil-2 192.168.20.2/24  Skema  Koneksi dari r1 ke r2 menggunakan authentikasi pap (clear text) Koneksi dari r3 ke r2 menggunakan authentikasi chap (encrypted text) Koneksi antar router menggunakan kabel serial DCE Koneksi dari router ke switch dan dari switch ke pc menggunakan kabel Straight Switch menggunakan mode access (vlan 1) Password pap &ldquo;ppp-pap&rdquo; Password chap &ldquo;ppp-chap&rdquo;  Dari tabel diatas kita akan menerapkan 2 tipe authentikasi PPP r1 se2/0 –> r2 se2/0 dengan authentikasi PAP dan r2 se3/0 –> r3 se3/0 dengan authentikasi CHAP.">
+Skema  r1 Se2/0 10.0.0.1/8, Fa0/0 192.168.10.0/24 r2 Se2/0 10.0.0.2/8, Se3/0 20.0.0.2/8 r3 Se3/0 20.0.0.1/8, Fa0/0, 192.168.20.0/24 pc-aidil-1 192.168.10.2/24 pc-aidil-2 192.168.20.2/24  Detail  Koneksi dari r1 ke r2 menggunakan authentikasi pap (clear text) Koneksi dari r3 ke r2 menggunakan authentikasi chap (encrypted text) Koneksi antar router menggunakan kabel serial DCE Koneksi dari router ke switch dan dari switch ke pc menggunakan kabel Straight Switch menggunakan mode access (vlan 1) Password pap &ldquo;ppp-pap&rdquo; Password chap &ldquo;ppp-chap&rdquo;  Dari tabel diatas kita akan menerapkan 2 tipe authentikasi PPP r1 se2/0 –> r2 se2/0 dengan authentikasi PAP dan r2 se3/0 –> r3 se3/0 dengan authentikasi CHAP.">
 <meta name=author content="Aidil Putra">
 <link rel=canonical href=/2021/10/11/cara-konfigurasi-ppp-pada-cisco-packet-tracer-menggunakan-pap-dan-chap/>
 <link crossorigin=anonymous href=/assets/css/stylesheet.min.5e2b4101351c21e906f398ae96901791830f58d430f96f2659dab7eaef7b3cb7.css integrity="sha256-XitBATUcIekG85iulpAXkYMPWNQw+W8mWdq36u97PLc=" rel="preload stylesheet" as=style>
@@ -24,7 +24,7 @@ Detail  r1 Se2/0 10.0.0.1/8, Fa0/0 192.168.10.0/24 r2 Se2/0 10.0.0.2/8, Se3/0 20
 <style>#theme-toggle,.top-link{display:none}</style>
 </noscript><meta property="og:title" content="Cara Konfigurasi ppp pada Cisco Packet Tracer menggunakan pap dan chap">
 <meta property="og:description" content="Artikel ini akan membahas bagaimana mengkonfigurasi ppp pada cisco packet tracer menggunakan authentikasi pap dan chap dan sebagai tambahan koneksi koneksi yang melewati network yang bebeda akan di cover oleh routing ospf.
-Detail  r1 Se2/0 10.0.0.1/8, Fa0/0 192.168.10.0/24 r2 Se2/0 10.0.0.2/8, Se3/0 20.0.0.2/8 r3 Se3/0 20.0.0.1/8, Fa0/0, 192.168.20.0/24 pc-aidil-1 192.168.10.2/24 pc-aidil-2 192.168.20.2/24  Skema  Koneksi dari r1 ke r2 menggunakan authentikasi pap (clear text) Koneksi dari r3 ke r2 menggunakan authentikasi chap (encrypted text) Koneksi antar router menggunakan kabel serial DCE Koneksi dari router ke switch dan dari switch ke pc menggunakan kabel Straight Switch menggunakan mode access (vlan 1) Password pap &ldquo;ppp-pap&rdquo; Password chap &ldquo;ppp-chap&rdquo;  Dari tabel diatas kita akan menerapkan 2 tipe authentikasi PPP r1 se2/0 –> r2 se2/0 dengan authentikasi PAP dan r2 se3/0 –> r3 se3/0 dengan authentikasi CHAP.">
+Skema  r1 Se2/0 10.0.0.1/8, Fa0/0 192.168.10.0/24 r2 Se2/0 10.0.0.2/8, Se3/0 20.0.0.2/8 r3 Se3/0 20.0.0.1/8, Fa0/0, 192.168.20.0/24 pc-aidil-1 192.168.10.2/24 pc-aidil-2 192.168.20.2/24  Detail  Koneksi dari r1 ke r2 menggunakan authentikasi pap (clear text) Koneksi dari r3 ke r2 menggunakan authentikasi chap (encrypted text) Koneksi antar router menggunakan kabel serial DCE Koneksi dari router ke switch dan dari switch ke pc menggunakan kabel Straight Switch menggunakan mode access (vlan 1) Password pap &ldquo;ppp-pap&rdquo; Password chap &ldquo;ppp-chap&rdquo;  Dari tabel diatas kita akan menerapkan 2 tipe authentikasi PPP r1 se2/0 –> r2 se2/0 dengan authentikasi PAP dan r2 se3/0 –> r3 se3/0 dengan authentikasi CHAP.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="/2021/10/11/cara-konfigurasi-ppp-pada-cisco-packet-tracer-menggunakan-pap-dan-chap/"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2021-10-11T00:00:00+00:00">
@@ -32,9 +32,9 @@ Detail  r1 Se2/0 10.0.0.1/8, Fa0/0 192.168.10.0/24 r2 Se2/0 10.0.0.2/8, Se3/0 20
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="Cara Konfigurasi ppp pada Cisco Packet Tracer menggunakan pap dan chap">
 <meta name=twitter:description content="Artikel ini akan membahas bagaimana mengkonfigurasi ppp pada cisco packet tracer menggunakan authentikasi pap dan chap dan sebagai tambahan koneksi koneksi yang melewati network yang bebeda akan di cover oleh routing ospf.
-Detail  r1 Se2/0 10.0.0.1/8, Fa0/0 192.168.10.0/24 r2 Se2/0 10.0.0.2/8, Se3/0 20.0.0.2/8 r3 Se3/0 20.0.0.1/8, Fa0/0, 192.168.20.0/24 pc-aidil-1 192.168.10.2/24 pc-aidil-2 192.168.20.2/24  Skema  Koneksi dari r1 ke r2 menggunakan authentikasi pap (clear text) Koneksi dari r3 ke r2 menggunakan authentikasi chap (encrypted text) Koneksi antar router menggunakan kabel serial DCE Koneksi dari router ke switch dan dari switch ke pc menggunakan kabel Straight Switch menggunakan mode access (vlan 1) Password pap &ldquo;ppp-pap&rdquo; Password chap &ldquo;ppp-chap&rdquo;  Dari tabel diatas kita akan menerapkan 2 tipe authentikasi PPP r1 se2/0 –> r2 se2/0 dengan authentikasi PAP dan r2 se3/0 –> r3 se3/0 dengan authentikasi CHAP.">
+Skema  r1 Se2/0 10.0.0.1/8, Fa0/0 192.168.10.0/24 r2 Se2/0 10.0.0.2/8, Se3/0 20.0.0.2/8 r3 Se3/0 20.0.0.1/8, Fa0/0, 192.168.20.0/24 pc-aidil-1 192.168.10.2/24 pc-aidil-2 192.168.20.2/24  Detail  Koneksi dari r1 ke r2 menggunakan authentikasi pap (clear text) Koneksi dari r3 ke r2 menggunakan authentikasi chap (encrypted text) Koneksi antar router menggunakan kabel serial DCE Koneksi dari router ke switch dan dari switch ke pc menggunakan kabel Straight Switch menggunakan mode access (vlan 1) Password pap &ldquo;ppp-pap&rdquo; Password chap &ldquo;ppp-chap&rdquo;  Dari tabel diatas kita akan menerapkan 2 tipe authentikasi PPP r1 se2/0 –> r2 se2/0 dengan authentikasi PAP dan r2 se3/0 –> r3 se3/0 dengan authentikasi CHAP.">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":2,"name":"Posts","item":"/posts/"},{"@type":"ListItem","position":3,"name":"Cara Konfigurasi ppp pada Cisco Packet Tracer menggunakan pap dan chap","item":"/2021/10/11/cara-konfigurasi-ppp-pada-cisco-packet-tracer-menggunakan-pap-dan-chap/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Cara Konfigurasi ppp pada Cisco Packet Tracer menggunakan pap dan chap","name":"Cara Konfigurasi ppp pada Cisco Packet Tracer menggunakan pap dan chap","description":"Artikel ini akan membahas bagaimana mengkonfigurasi ppp pada cisco packet tracer menggunakan authentikasi pap dan chap dan sebagai tambahan koneksi koneksi yang melewati network yang bebeda akan di cover oleh routing ospf.\nDetail  r1 Se2/0 10.0.0.1/8, Fa0/0 192.168.10.0/24 r2 Se2/0 10.0.0.2/8, Se3/0 20.0.0.2/8 r3 Se3/0 20.0.0.1/8, Fa0/0, 192.168.20.0/24 pc-aidil-1 192.168.10.2/24 pc-aidil-2 192.168.20.2/24  Skema  Koneksi dari r1 ke r2 menggunakan authentikasi pap (clear text) Koneksi dari r3 ke r2 menggunakan authentikasi chap (encrypted text) Koneksi antar router menggunakan kabel serial DCE Koneksi dari router ke switch dan dari switch ke pc menggunakan kabel Straight Switch menggunakan mode access (vlan 1) Password pap \u0026ldquo;ppp-pap\u0026rdquo; Password chap \u0026ldquo;ppp-chap\u0026rdquo;  Dari tabel diatas kita akan menerapkan 2 tipe authentikasi PPP r1 se2/0 –\u0026gt; r2 se2/0 dengan authentikasi PAP dan r2 se3/0 –\u0026gt; r3 se3/0 dengan authentikasi CHAP.","keywords":["cisco packet tracer","ppp","chap","pap","ospf"],"articleBody":"  Artikel ini akan membahas bagaimana mengkonfigurasi ppp pada cisco packet tracer menggunakan authentikasi pap dan chap dan sebagai tambahan koneksi koneksi yang melewati network yang bebeda akan di cover oleh routing ospf.\nDetail  r1 Se2/0 10.0.0.1/8, Fa0/0 192.168.10.0/24 r2 Se2/0 10.0.0.2/8, Se3/0 20.0.0.2/8 r3 Se3/0 20.0.0.1/8, Fa0/0, 192.168.20.0/24 pc-aidil-1 192.168.10.2/24 pc-aidil-2 192.168.20.2/24  Skema  Koneksi dari r1 ke r2 menggunakan authentikasi pap (clear text) Koneksi dari r3 ke r2 menggunakan authentikasi chap (encrypted text) Koneksi antar router menggunakan kabel serial DCE Koneksi dari router ke switch dan dari switch ke pc menggunakan kabel Straight Switch menggunakan mode access (vlan 1) Password pap “ppp-pap” Password chap “ppp-chap”  Dari tabel diatas kita akan menerapkan 2 tipe authentikasi PPP r1 se2/0 – r2 se2/0 dengan authentikasi PAP dan r2 se3/0 – r3 se3/0 dengan authentikasi CHAP. Setelah koneksi PPP berhasil dibuat, yang perlu dilakukan adalah melakukan routing (ospf) agar antar client yang berbeda network bisa saling terhubung.\nKonfigurasi Untuk mengkonfigurasi router silahkan klik icon router dan masuk ke menu CLI dan ikuti langkah berikut.\n# # Konfigurasi router r1 # Routerenable Router#configure terminal Router(config)#hostname r1 r1(config)#username r2 password ppp-pap r1(config)#interface se2/0 r1(config-if)#ip address 10.0.0.1 255.0.0.0 r1(config-if)#encapsulation ppp r1(config-if)#ppp authentication pap r1(config-if)#ppp pap sent-username r1 password ppp-pap r1(config-if)#no shutdown r1(config-if)#exit r1(config)#interface fastEthernet 0/0 r1(config-if)#ip address 192.168.10.1 255.255.255.0 r1(config-if)#no shutdown r1(config-if)#exit r1(config)# Keluar dan masuk ke router r2\n# # Konfigurasi router r2 # Routerenable Router#configure terminal Router(config)#hostname r2 r2(config)#username r1 password ppp-pap r2(config)#username r3 password ppp-chap r2(config)#interface se2/0 r2(config-if)#ip address 10.0.0.2 255.0.0.0 r2(config-if)#clock rate 64000 r2(config-if)#encapsulation ppp r2(config-if)#ppp authentication pap r2(config-if)#ppp pap sent-username r2 password ppp-pap r2(config-if)#no shutdown r2(config-if)#exit r2(config)#interface serial 3/0 r2(config-if)#ip address 20.0.0.2 255.0.0.0 r2(config-if)#encapsulation ppp r2(config-if)#ppp authentication chap r2(config-if)#no shutdown r2(config-if)#exit r2(config)# Keluar dan masuk ke router r3\nRouterenable Router#configure terminal Router(config)#hostname r3 r3(config)#username r2 password ppp-chap r3(config)#interface se3/0 r3(config-if)#ip address 20.0.0.1 255.0.0.0 r3(config-if)#clock rate 64000 r3(config-if)#encapsulation ppp r3(config-if)#ppp authentication chap r3(config-if)#no shutdown r3(config-if)#exit r3(config)#interface fastEthernet 0/0 r3(config-if)#ip address 192.168.20.1 255.255.255.0 r3(config-if)#no shutdown r3(config-if)#exit r3(config)# Sampai disini konfigurasi PPP sudah selesai dan tinggal melakukan verifikasi. Untuk memastikan protocol encapsulationnya sudah menjadi PPP silahkan masuk ke router dan lihat status interface nya.\nr1show interfaces se2/0 Serial2/0 is up, line protocol is up (connected) Hardware is HD64570 Internet address is 10.0.0.1/8 MTU 1500 bytes, BW 128 Kbit, DLY 20000 usec, reliability 255/255, txload 1/255, rxload 1/255 Encapsulation PPP, loopback not set, keepalive set (10 sec) LCP Open Open: IPCP, CDPCP Last input never, output never, output hang never Selanjutnya kita akan mengkonfigurasi routing ospf agar pc-aidil-1 (192.168.10.2/24) dan pc-aidil-2 (192.168.20.2) bisa saling terhubung.\n# # Konfigruasi router r1 # r1(config)#router ospf 10 r1(config-router)#network 10.0.0.0 255.255.255.0 area 0 r1(config-router)#network 192.168.10.0 0.0.0.255 area 0 r1(config-router)#log-adjacency-changes r1(config-router)#exit r1(config)#exit r1#copy running-config startup-config Destination filename [startup-config]? Building configuration… Keluar dan masuk ke router r2\n# # Konfigruasi router r2 # r2(config)#router ospf 10 r2(config-router)#network 10.0.0.0 255.255.255.0 area 0 r2(config-router)#network 20.0.0.0 255.255.255.0 area 0 r2(config-router)#log-adjacency-changes r2(config-router)#exit r2(config)#exit r2#copy running-config startup-config Destination filename [startup-config]? Building configuration… Keluar dan masuk ke router r3\n# # Konfigruasi router r2 # r3(config)#router ospf 10 r3(config-router)#network 20.0.0.0 255.255.255.0 area 0 r3(config-router)#network 192.168.20.0 0.0.0.255 area 0 r3(config-router)#log-adjacency-changes r3(config-router)#exit r3(config)#exit r3#copy running-config startup-config Destination filename [startup-config]? Building configuration… Untuk routing ospf telah selesai di konfigurasi, kita bisa melakukan pengecekan dengan cara masuk ke router r1 dan lihat apakah prefix router r2 (192.168.20.0/24) telah dimiliki oleh routerr1\nr1show ip route | include 192.168.20 O 192.168.20.0/24 [110/129] via 10.0.0.2, 00:23:23, Serial2/0 Dilihat dari tabel routing di atas saat ini router r1 telah memiliki prefx 192.168.20.0/24 dengan flag O dimana arti nya prefix tersebut di dapat dari routing dinamis ospf yang arti nya konfigurasi ospf telah berhasil.\nTerakhir tinggal pastikan bahwa pc-aidil-1 sudah bisa melakukan ping ke pc-aidil-2 dengan cara masuk ke command prompt\nConnection-specific DNS Suffix..: Link-local IPv6 Address.........: FE80::202:4AFF:FE32:1362 IPv6 Address....................: :: IPv4 Address....................: 192.168.10.2 Subnet Mask.....................: 255.255.255.0 Default Gateway.................: :: 192.168.10.1 Bluetooth Connection: Connection-specific DNS Suffix..: Link-local IPv6 Address.........: :: IPv6 Address....................: :: IPv4 Address....................: 0.0.0.0 Subnet Mask.....................: 0.0.0.0 Default Gateway.................: :: 0.0.0.0 C:\\ping 192.168.20.1 Pinging 192.168.20.1 with 32 bytes of data: Reply from 192.168.20.1: bytes=32 time=2ms TTL=253 Reply from 192.168.20.1: bytes=32 time=5ms TTL=253 Reply from 192.168.20.1: bytes=32 time=4ms TTL=253 Reply from 192.168.20.1: bytes=32 time=5ms TTL=253 Ping statistics for 192.168.20.1: Packets: Sent = 4, Received = 4, Lost = 0 (0% loss), Approximate round trip times in milli-seconds: Minimum = 2ms, Maximum = 5ms, Average = 4ms ","wordCount":"720","inLanguage":"en","datePublished":"2021-10-11T00:00:00Z","dateModified":"2021-10-11T00:00:00Z","author":{"@type":"Person","name":"Aidil Putra"},"mainEntityOfPage":{"@type":"WebPage","@id":"/2021/10/11/cara-konfigurasi-ppp-pada-cisco-packet-tracer-menggunakan-pap-dan-chap/"},"publisher":{"@type":"Organization","name":"Personal Blog","logo":{"@type":"ImageObject","url":"favicon.ico"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Cara Konfigurasi ppp pada Cisco Packet Tracer menggunakan pap dan chap","name":"Cara Konfigurasi ppp pada Cisco Packet Tracer menggunakan pap dan chap","description":"Artikel ini akan membahas bagaimana mengkonfigurasi ppp pada cisco packet tracer menggunakan authentikasi pap dan chap dan sebagai tambahan koneksi koneksi yang melewati network yang bebeda akan di cover oleh routing ospf.\nSkema  r1 Se2/0 10.0.0.1/8, Fa0/0 192.168.10.0/24 r2 Se2/0 10.0.0.2/8, Se3/0 20.0.0.2/8 r3 Se3/0 20.0.0.1/8, Fa0/0, 192.168.20.0/24 pc-aidil-1 192.168.10.2/24 pc-aidil-2 192.168.20.2/24  Detail  Koneksi dari r1 ke r2 menggunakan authentikasi pap (clear text) Koneksi dari r3 ke r2 menggunakan authentikasi chap (encrypted text) Koneksi antar router menggunakan kabel serial DCE Koneksi dari router ke switch dan dari switch ke pc menggunakan kabel Straight Switch menggunakan mode access (vlan 1) Password pap \u0026ldquo;ppp-pap\u0026rdquo; Password chap \u0026ldquo;ppp-chap\u0026rdquo;  Dari tabel diatas kita akan menerapkan 2 tipe authentikasi PPP r1 se2/0 –\u0026gt; r2 se2/0 dengan authentikasi PAP dan r2 se3/0 –\u0026gt; r3 se3/0 dengan authentikasi CHAP.","keywords":["cisco packet tracer","ppp","chap","pap","ospf"],"articleBody":"  Artikel ini akan membahas bagaimana mengkonfigurasi ppp pada cisco packet tracer menggunakan authentikasi pap dan chap dan sebagai tambahan koneksi koneksi yang melewati network yang bebeda akan di cover oleh routing ospf.\nSkema  r1 Se2/0 10.0.0.1/8, Fa0/0 192.168.10.0/24 r2 Se2/0 10.0.0.2/8, Se3/0 20.0.0.2/8 r3 Se3/0 20.0.0.1/8, Fa0/0, 192.168.20.0/24 pc-aidil-1 192.168.10.2/24 pc-aidil-2 192.168.20.2/24  Detail  Koneksi dari r1 ke r2 menggunakan authentikasi pap (clear text) Koneksi dari r3 ke r2 menggunakan authentikasi chap (encrypted text) Koneksi antar router menggunakan kabel serial DCE Koneksi dari router ke switch dan dari switch ke pc menggunakan kabel Straight Switch menggunakan mode access (vlan 1) Password pap “ppp-pap” Password chap “ppp-chap”  Dari tabel diatas kita akan menerapkan 2 tipe authentikasi PPP r1 se2/0 – r2 se2/0 dengan authentikasi PAP dan r2 se3/0 – r3 se3/0 dengan authentikasi CHAP. Setelah koneksi PPP berhasil dibuat, yang perlu dilakukan adalah melakukan routing (ospf) agar antar client yang berbeda network bisa saling terhubung.\nKonfigurasi Untuk mengkonfigurasi router silahkan klik icon router dan masuk ke menu CLI dan ikuti langkah berikut.\n# # Konfigurasi router r1 # Routerenable Router#configure terminal Router(config)#hostname r1 r1(config)#username r2 password ppp-pap r1(config)#interface se2/0 r1(config-if)#ip address 10.0.0.1 255.0.0.0 r1(config-if)#encapsulation ppp r1(config-if)#ppp authentication pap r1(config-if)#ppp pap sent-username r1 password ppp-pap r1(config-if)#no shutdown r1(config-if)#exit r1(config)#interface fastEthernet 0/0 r1(config-if)#ip address 192.168.10.1 255.255.255.0 r1(config-if)#no shutdown r1(config-if)#exit r1(config)# Keluar dan masuk ke router r2\n# # Konfigurasi router r2 # Routerenable Router#configure terminal Router(config)#hostname r2 r2(config)#username r1 password ppp-pap r2(config)#username r3 password ppp-chap r2(config)#interface se2/0 r2(config-if)#ip address 10.0.0.2 255.0.0.0 r2(config-if)#clock rate 64000 r2(config-if)#encapsulation ppp r2(config-if)#ppp authentication pap r2(config-if)#ppp pap sent-username r2 password ppp-pap r2(config-if)#no shutdown r2(config-if)#exit r2(config)#interface serial 3/0 r2(config-if)#ip address 20.0.0.2 255.0.0.0 r2(config-if)#encapsulation ppp r2(config-if)#ppp authentication chap r2(config-if)#no shutdown r2(config-if)#exit r2(config)# Keluar dan masuk ke router r3\nRouterenable Router#configure terminal Router(config)#hostname r3 r3(config)#username r2 password ppp-chap r3(config)#interface se3/0 r3(config-if)#ip address 20.0.0.1 255.0.0.0 r3(config-if)#clock rate 64000 r3(config-if)#encapsulation ppp r3(config-if)#ppp authentication chap  r3(config-if)#no shutdown r3(config-if)#exit r3(config)#interface fastEthernet 0/0 r3(config-if)#ip address 192.168.20.1 255.255.255.0 r3(config-if)#no shutdown r3(config-if)#exit r3(config)# Sampai disini konfigurasi PPP sudah selesai dan tinggal melakukan verifikasi apakah konfigurasi PPP kita sudah berhasil.. Untuk memastikan protocol encapsulationnya sudah menjadi PPP silahkan masuk ke router dan lihat status interface nya.\nr1show interfaces se2/0 Serial2/0 is up, line protocol is up (connected) Hardware is HD64570 Internet address is 10.0.0.1/8 MTU 1500 bytes, BW 128 Kbit, DLY 20000 usec, reliability 255/255, txload 1/255, rxload 1/255 Encapsulation PPP, loopback not set, keepalive set (10 sec) LCP Open Open: IPCP, CDPCP Last input never, output never, output hang never Selanjutnya kita akan mengkonfigurasi routing ospf agar pc-aidil-1 (192.168.10.2/24) dan pc-aidil-2 (192.168.20.2) bisa saling terhubung.\n# # Konfigruasi router r1 # r1(config)#router ospf 10 r1(config-router)#network 10.0.0.0 255.255.255.0 area 0 r1(config-router)#network 192.168.10.0 0.0.0.255 area 0 r1(config-router)#log-adjacency-changes  r1(config-router)#exit r1(config)#exit r1#copy running-config startup-config Destination filename [startup-config]? Building configuration… Keluar dan masuk ke router r2\n# # Konfigruasi router r2 # r2(config)#router ospf 10 r2(config-router)#network 10.0.0.0 255.255.255.0 area 0 r2(config-router)#network 20.0.0.0 255.255.255.0 area 0 r2(config-router)#log-adjacency-changes  r2(config-router)#exit r2(config)#exit r2#copy running-config startup-config Destination filename [startup-config]? Building configuration… Keluar dan masuk ke router r3\n# # Konfigruasi router r2 # r3(config)#router ospf 10 r3(config-router)#network 20.0.0.0 255.255.255.0 area 0 r3(config-router)#network 192.168.20.0 0.0.0.255 area 0 r3(config-router)#log-adjacency-changes  r3(config-router)#exit r3(config)#exit r3#copy running-config startup-config Destination filename [startup-config]? Building configuration… Untuk routing ospf telah selesai di konfigurasi, kita bisa melakukan pengecekan dengan cara masuk ke router r1 dan lihat apakah prefix router r2 (192.168.20.0/24) telah dimiliki oleh routerr1\nr1show ip route | include 192.168.20 O 192.168.20.0/24 [110/129] via 10.0.0.2, 00:23:23, Serial2/0 Dilihat dari tabel routing di atas saat ini router r1 telah memiliki prefx 192.168.20.0/24 dengan flag O dimana arti nya prefix tersebut di dapat dari routing dinamis ospf yang arti nya konfigurasi ospf telah berhasil.\nTerakhir tinggal pastikan bahwa pc-aidil-1 sudah bisa melakukan ping ke pc-aidil-2 dengan cara masuk ke command prompt\nC:\\ipconfig FastEthernet0 Connection:(default port) Connection-specific DNS Suffix..: Link-local IPv6 Address.........: FE80::202:4AFF:FE32:1362 IPv6 Address....................: :: IPv4 Address....................: 192.168.10.2 Subnet Mask.....................: 255.255.255.0 Default Gateway.................: 192.168.10.1 C:\\ping 192.168.20.1 Pinging 192.168.20.1 with 32 bytes of data: Reply from 192.168.20.1: bytes=32 time=2ms TTL=253 Reply from 192.168.20.1: bytes=32 time=5ms TTL=253 Reply from 192.168.20.1: bytes=32 time=4ms TTL=253 Reply from 192.168.20.1: bytes=32 time=5ms TTL=253 Ping statistics for 192.168.20.1: Packets: Sent = 4, Received = 4, Lost = 0 (0% loss), Approximate round trip times in milli-seconds: Minimum = 2ms, Maximum = 5ms, Average = 4ms ","wordCount":"707","inLanguage":"en","datePublished":"2021-10-11T00:00:00Z","dateModified":"2021-10-11T00:00:00Z","author":{"@type":"Person","name":"Aidil Putra"},"mainEntityOfPage":{"@type":"WebPage","@id":"/2021/10/11/cara-konfigurasi-ppp-pada-cisco-packet-tracer-menggunakan-pap-dan-chap/"},"publisher":{"@type":"Organization","name":"Personal Blog","logo":{"@type":"ImageObject","url":"favicon.ico"}}}</script>
 </head>
 <body class=dark id=top>
 <script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove('dark')</script>
@@ -77,9 +77,9 @@ Cara Konfigurasi ppp pada Cisco Packet Tracer menggunakan pap dan chap
 </summary>
 <div class=inner><ul>
 <li>
-<a href=#detail aria-label=Detail>Detail</a></li>
-<li>
 <a href=#skema aria-label=Skema>Skema</a></li>
+<li>
+<a href=#detail aria-label=Detail>Detail</a></li>
 <li>
 <a href=#konfigurasi aria-label=Konfigurasi>Konfigurasi</a>
 </li>
@@ -92,7 +92,7 @@ Cara Konfigurasi ppp pada Cisco Packet Tracer menggunakan pap dan chap
 </figure>
 <p>Artikel ini akan membahas bagaimana mengkonfigurasi ppp pada <code>cisco packet tracer</code> menggunakan authentikasi <code>pap</code> dan <code>chap</code>
 dan sebagai tambahan koneksi koneksi yang melewati network yang bebeda akan di cover oleh routing <code>ospf</code>.</p>
-<h2 id=detail>Detail<a hidden class=anchor aria-hidden=true href=#detail>#</a></h2>
+<h2 id=skema>Skema<a hidden class=anchor aria-hidden=true href=#skema>#</a></h2>
 <ul>
 <li>r1 Se2/0 10.0.0.1/8, Fa0/0 192.168.10.0/24</li>
 <li>r2 Se2/0 10.0.0.2/8, Se3/0 20.0.0.2/8</li>
@@ -100,7 +100,7 @@ dan sebagai tambahan koneksi koneksi yang melewati network yang bebeda akan di c
 <li>pc-aidil-1 192.168.10.2/24</li>
 <li>pc-aidil-2 192.168.20.2/24</li>
 </ul>
-<h2 id=skema>Skema<a hidden class=anchor aria-hidden=true href=#skema>#</a></h2>
+<h2 id=detail>Detail<a hidden class=anchor aria-hidden=true href=#detail>#</a></h2>
 <ul>
 <li>Koneksi dari r1 ke r2 menggunakan authentikasi <code>pap</code> (clear text)</li>
 <li>Koneksi dari r3 ke r2 menggunakan authentikasi <code>chap</code> (encrypted text)</li>
@@ -111,29 +111,29 @@ dan sebagai tambahan koneksi koneksi yang melewati network yang bebeda akan di c
 <li>Password chap &ldquo;ppp-chap&rdquo;</li>
 </ul>
 <p>Dari tabel diatas kita akan menerapkan 2 tipe authentikasi PPP r1 se2/0 –> r2 se2/0 dengan authentikasi PAP dan r2 se3/0 –> r3 se3/0 dengan authentikasi CHAP.
-Setelah koneksi PPP berhasil dibuat, yang perlu dilakukan adalah melakukan routing (ospf) agar antar <code>client</code> yang berbeda network bisa saling terhubung.</p>
+Setelah koneksi PPP berhasil dibuat, yang perlu dilakukan adalah melakukan routing (ospf) agar antar client yang berbeda network bisa saling terhubung.</p>
 <h2 id=konfigurasi>Konfigurasi<a hidden class=anchor aria-hidden=true href=#konfigurasi>#</a></h2>
 <p>Untuk mengkonfigurasi router silahkan klik icon router dan masuk ke menu <code>CLI</code> dan ikuti langkah berikut.</p>
-<pre tabindex=0><code class=language-console data-lang=console>#
-# Konfigurasi router r1
-#
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e>#</span>
+<span style=color:#75715e># Konfigurasi router r1</span>
+<span style=color:#75715e>#</span>
 Router&gt;enable 
 Router#configure terminal
-Router(config)#hostname r1
-r1(config)#username r2 password ppp-pap
-r1(config)#interface se2/0
-r1(config-if)#ip address 10.0.0.1 255.0.0.0
-r1(config-if)#encapsulation ppp
-r1(config-if)#ppp authentication pap
-r1(config-if)#ppp pap sent-username r1 password ppp-pap
-r1(config-if)#no shutdown
-r1(config-if)#exit
-r1(config)#interface fastEthernet 0/0
-r1(config-if)#ip address 192.168.10.1 255.255.255.0
-r1(config-if)#no shutdown
-r1(config-if)#exit
-r1(config)#
-</code></pre><p>Keluar dan masuk ke router r2</p>
+Router<span style=color:#f92672>(</span>config<span style=color:#f92672>)</span><span style=color:#75715e>#hostname r1</span>
+r1<span style=color:#f92672>(</span>config<span style=color:#f92672>)</span><span style=color:#75715e>#username r2 password ppp-pap</span>
+r1<span style=color:#f92672>(</span>config<span style=color:#f92672>)</span><span style=color:#75715e>#interface se2/0</span>
+r1<span style=color:#f92672>(</span>config-if<span style=color:#f92672>)</span><span style=color:#75715e>#ip address 10.0.0.1 255.0.0.0</span>
+r1<span style=color:#f92672>(</span>config-if<span style=color:#f92672>)</span><span style=color:#75715e>#encapsulation ppp</span>
+r1<span style=color:#f92672>(</span>config-if<span style=color:#f92672>)</span><span style=color:#75715e>#ppp authentication pap</span>
+r1<span style=color:#f92672>(</span>config-if<span style=color:#f92672>)</span><span style=color:#75715e>#ppp pap sent-username r1 password ppp-pap</span>
+r1<span style=color:#f92672>(</span>config-if<span style=color:#f92672>)</span><span style=color:#75715e>#no shutdown</span>
+r1<span style=color:#f92672>(</span>config-if<span style=color:#f92672>)</span><span style=color:#75715e>#exit</span>
+r1<span style=color:#f92672>(</span>config<span style=color:#f92672>)</span><span style=color:#75715e>#interface fastEthernet 0/0</span>
+r1<span style=color:#f92672>(</span>config-if<span style=color:#f92672>)</span><span style=color:#75715e>#ip address 192.168.10.1 255.255.255.0</span>
+r1<span style=color:#f92672>(</span>config-if<span style=color:#f92672>)</span><span style=color:#75715e>#no shutdown</span>
+r1<span style=color:#f92672>(</span>config-if<span style=color:#f92672>)</span><span style=color:#75715e>#exit</span>
+r1<span style=color:#f92672>(</span>config<span style=color:#f92672>)</span><span style=color:#75715e>#</span>
+</code></pre></div><p>Keluar dan masuk ke router r2</p>
 <pre tabindex=0><code class=language-consile data-lang=consile>#
 # Konfigurasi router r2
 #
@@ -158,110 +158,102 @@ r2(config-if)#no shutdown
 r2(config-if)#exit
 r2(config)#
 </code></pre><p>Keluar dan masuk ke router r3</p>
-<pre tabindex=0><code class=language-console data-lang=console>Router&gt;enable
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>Router&gt;enable
 Router#configure terminal
-Router(config)#hostname r3
-r3(config)#username r2 password ppp-chap
-r3(config)#interface se3/0
-r3(config-if)#ip address 20.0.0.1 255.0.0.0
-r3(config-if)#clock rate 64000
-r3(config-if)#encapsulation ppp
-r3(config-if)#ppp authentication chap 
-r3(config-if)#no shutdown
-r3(config-if)#exit
-r3(config)#interface fastEthernet 0/0
-r3(config-if)#ip address 192.168.20.1 255.255.255.0
-r3(config-if)#no shutdown
-r3(config-if)#exit
-r3(config)#
-</code></pre><p>Sampai disini konfigurasi PPP sudah selesai dan tinggal melakukan verifikasi. Untuk memastikan protocol encapsulationnya sudah menjadi PPP silahkan masuk ke router dan lihat status interface nya.</p>
-<pre tabindex=0><code class=language-console data-lang=console>r1&gt;show interfaces se2/0
-Serial2/0 is up, line protocol is up (connected)
+Router<span style=color:#f92672>(</span>config<span style=color:#f92672>)</span><span style=color:#75715e>#hostname r3</span>
+r3<span style=color:#f92672>(</span>config<span style=color:#f92672>)</span><span style=color:#75715e>#username r2 password ppp-chap</span>
+r3<span style=color:#f92672>(</span>config<span style=color:#f92672>)</span><span style=color:#75715e>#interface se3/0</span>
+r3<span style=color:#f92672>(</span>config-if<span style=color:#f92672>)</span><span style=color:#75715e>#ip address 20.0.0.1 255.0.0.0</span>
+r3<span style=color:#f92672>(</span>config-if<span style=color:#f92672>)</span><span style=color:#75715e>#clock rate 64000</span>
+r3<span style=color:#f92672>(</span>config-if<span style=color:#f92672>)</span><span style=color:#75715e>#encapsulation ppp</span>
+r3<span style=color:#f92672>(</span>config-if<span style=color:#f92672>)</span><span style=color:#75715e>#ppp authentication chap </span>
+r3<span style=color:#f92672>(</span>config-if<span style=color:#f92672>)</span><span style=color:#75715e>#no shutdown</span>
+r3<span style=color:#f92672>(</span>config-if<span style=color:#f92672>)</span><span style=color:#75715e>#exit</span>
+r3<span style=color:#f92672>(</span>config<span style=color:#f92672>)</span><span style=color:#75715e>#interface fastEthernet 0/0</span>
+r3<span style=color:#f92672>(</span>config-if<span style=color:#f92672>)</span><span style=color:#75715e>#ip address 192.168.20.1 255.255.255.0</span>
+r3<span style=color:#f92672>(</span>config-if<span style=color:#f92672>)</span><span style=color:#75715e>#no shutdown</span>
+r3<span style=color:#f92672>(</span>config-if<span style=color:#f92672>)</span><span style=color:#75715e>#exit</span>
+r3<span style=color:#f92672>(</span>config<span style=color:#f92672>)</span><span style=color:#75715e>#</span>
+</code></pre></div><p>Sampai disini konfigurasi PPP sudah selesai dan tinggal melakukan verifikasi apakah konfigurasi PPP kita sudah berhasil.. Untuk memastikan protocol encapsulationnya sudah menjadi PPP silahkan masuk ke router dan lihat status interface nya.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>r1&gt;show interfaces se2/0
+Serial2/0 is up, line protocol is up <span style=color:#f92672>(</span>connected<span style=color:#f92672>)</span>
   Hardware is HD64570
   Internet address is 10.0.0.1/8
-  MTU 1500 bytes, BW 128 Kbit, DLY 20000 usec,
+  MTU <span style=color:#ae81ff>1500</span> bytes, BW <span style=color:#ae81ff>128</span> Kbit, DLY <span style=color:#ae81ff>20000</span> usec,
      reliability 255/255, txload 1/255, rxload 1/255
-  Encapsulation PPP, loopback not set, keepalive set (10 sec)
+  Encapsulation PPP, loopback not set, keepalive set <span style=color:#f92672>(</span><span style=color:#ae81ff>10</span> sec<span style=color:#f92672>)</span>
   LCP Open
   Open: IPCP, CDPCP
   Last input never, output never, output hang never
-</code></pre><p>Selanjutnya kita akan mengkonfigurasi routing <code>ospf</code> agar pc-aidil-1 (192.168.10.2/24) dan pc-aidil-2 (192.168.20.2) bisa saling terhubung.</p>
-<pre tabindex=0><code class=language-console data-lang=console>#
-# Konfigruasi router r1
-#
-r1(config)#router ospf 10
-r1(config-router)#network 10.0.0.0 255.255.255.0 area 0
-r1(config-router)#network 192.168.10.0 0.0.0.255 area 0
-r1(config-router)#log-adjacency-changes 
-r1(config-router)#exit
-r1(config)#exit
+</code></pre></div><p>Selanjutnya kita akan mengkonfigurasi routing <code>ospf</code> agar pc-aidil-1 (192.168.10.2/24) dan pc-aidil-2 (192.168.20.2) bisa saling terhubung.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e>#</span>
+<span style=color:#75715e># Konfigruasi router r1</span>
+<span style=color:#75715e>#</span>
+r1<span style=color:#f92672>(</span>config<span style=color:#f92672>)</span><span style=color:#75715e>#router ospf 10</span>
+r1<span style=color:#f92672>(</span>config-router<span style=color:#f92672>)</span><span style=color:#75715e>#network 10.0.0.0 255.255.255.0 area 0</span>
+r1<span style=color:#f92672>(</span>config-router<span style=color:#f92672>)</span><span style=color:#75715e>#network 192.168.10.0 0.0.0.255 area 0</span>
+r1<span style=color:#f92672>(</span>config-router<span style=color:#f92672>)</span><span style=color:#75715e>#log-adjacency-changes </span>
+r1<span style=color:#f92672>(</span>config-router<span style=color:#f92672>)</span><span style=color:#75715e>#exit</span>
+r1<span style=color:#f92672>(</span>config<span style=color:#f92672>)</span><span style=color:#75715e>#exit</span>
 r1#copy running-config startup-config 
-Destination filename [startup-config]? 
+Destination filename <span style=color:#f92672>[</span>startup-config<span style=color:#f92672>]</span>? 
 Building configuration…
-</code></pre><p>Keluar dan masuk ke router r2</p>
-<pre tabindex=0><code class=language-console data-lang=console>#
-# Konfigruasi router r2
-#
-r2(config)#router ospf 10
-r2(config-router)#network 10.0.0.0 255.255.255.0 area 0
-r2(config-router)#network 20.0.0.0 255.255.255.0 area 0
-r2(config-router)#log-adjacency-changes 
-r2(config-router)#exit
-r2(config)#exit
+</code></pre></div><p>Keluar dan masuk ke router r2</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e>#</span>
+<span style=color:#75715e># Konfigruasi router r2</span>
+<span style=color:#75715e>#</span>
+r2<span style=color:#f92672>(</span>config<span style=color:#f92672>)</span><span style=color:#75715e>#router ospf 10</span>
+r2<span style=color:#f92672>(</span>config-router<span style=color:#f92672>)</span><span style=color:#75715e>#network 10.0.0.0 255.255.255.0 area 0</span>
+r2<span style=color:#f92672>(</span>config-router<span style=color:#f92672>)</span><span style=color:#75715e>#network 20.0.0.0 255.255.255.0 area 0</span>
+r2<span style=color:#f92672>(</span>config-router<span style=color:#f92672>)</span><span style=color:#75715e>#log-adjacency-changes </span>
+r2<span style=color:#f92672>(</span>config-router<span style=color:#f92672>)</span><span style=color:#75715e>#exit</span>
+r2<span style=color:#f92672>(</span>config<span style=color:#f92672>)</span><span style=color:#75715e>#exit</span>
 r2#copy running-config startup-config 
-Destination filename [startup-config]? 
+Destination filename <span style=color:#f92672>[</span>startup-config<span style=color:#f92672>]</span>? 
 Building configuration…
-</code></pre><p>Keluar dan masuk ke router r3</p>
-<pre tabindex=0><code class=language-console data-lang=console>#
-# Konfigruasi router r2
-#
-r3(config)#router ospf 10
-r3(config-router)#network 20.0.0.0 255.255.255.0 area 0
-r3(config-router)#network 192.168.20.0 0.0.0.255 area 0
-r3(config-router)#log-adjacency-changes 
-r3(config-router)#exit
-r3(config)#exit
+</code></pre></div><p>Keluar dan masuk ke router r3</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e>#</span>
+<span style=color:#75715e># Konfigruasi router r2</span>
+<span style=color:#75715e>#</span>
+r3<span style=color:#f92672>(</span>config<span style=color:#f92672>)</span><span style=color:#75715e>#router ospf 10</span>
+r3<span style=color:#f92672>(</span>config-router<span style=color:#f92672>)</span><span style=color:#75715e>#network 20.0.0.0 255.255.255.0 area 0</span>
+r3<span style=color:#f92672>(</span>config-router<span style=color:#f92672>)</span><span style=color:#75715e>#network 192.168.20.0 0.0.0.255 area 0</span>
+r3<span style=color:#f92672>(</span>config-router<span style=color:#f92672>)</span><span style=color:#75715e>#log-adjacency-changes </span>
+r3<span style=color:#f92672>(</span>config-router<span style=color:#f92672>)</span><span style=color:#75715e>#exit</span>
+r3<span style=color:#f92672>(</span>config<span style=color:#f92672>)</span><span style=color:#75715e>#exit</span>
 r3#copy running-config startup-config 
-Destination filename [startup-config]? 
+Destination filename <span style=color:#f92672>[</span>startup-config<span style=color:#f92672>]</span>? 
 Building configuration…
-</code></pre><p>Untuk routing <code>ospf</code> telah selesai di konfigurasi, kita bisa melakukan pengecekan dengan cara masuk ke router r1 dan lihat apakah prefix router r2 (192.168.20.0/24) telah dimiliki oleh routerr1</p>
-<pre tabindex=0><code class=language-console data-lang=console>r1&gt;show ip route  | include 192.168.20
-O    192.168.20.0/24 [110/129] via 10.0.0.2, 00:23:23, Serial2/0
-</code></pre><p>Dilihat dari tabel routing di atas saat ini router r1 telah memiliki prefx 192.168.20.0/24 dengan flag <code>O</code> dimana arti nya prefix tersebut di dapat dari routing dinamis <code>ospf</code> yang arti nya konfigurasi <code>ospf</code> telah berhasil.</p>
+</code></pre></div><p>Untuk routing <code>ospf</code> telah selesai di konfigurasi, kita bisa melakukan pengecekan dengan cara masuk ke router r1 dan lihat apakah prefix router r2 (192.168.20.0/24) telah dimiliki oleh routerr1</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>r1&gt;show ip route  | include 192.168.20
+O    192.168.20.0/24 <span style=color:#f92672>[</span>110/129<span style=color:#f92672>]</span> via 10.0.0.2, 00:23:23, Serial2/0
+</code></pre></div><p>Dilihat dari tabel routing di atas saat ini router r1 telah memiliki prefx 192.168.20.0/24 dengan flag <code>O</code> dimana arti nya prefix tersebut di dapat dari routing dinamis <code>ospf</code> yang arti nya konfigurasi <code>ospf</code> telah berhasil.</p>
 <p>Terakhir tinggal pastikan bahwa pc-aidil-1 sudah bisa melakukan ping ke pc-aidil-2 dengan cara masuk ke <code>command prompt</code></p>
-<pre tabindex=0><code class=language-console data-lang=console>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>C:<span style=color:#ae81ff>\&gt;</span>ipconfig
+
+FastEthernet0 Connection:<span style=color:#f92672>(</span>default port<span style=color:#f92672>)</span>
    Connection-specific DNS Suffix..: 
    Link-local IPv6 Address.........: FE80::202:4AFF:FE32:1362
    IPv6 Address....................: ::
    IPv4 Address....................: 192.168.10.2
    Subnet Mask.....................: 255.255.255.0
-   Default Gateway.................: ::
-                                     192.168.10.1
+   Default Gateway.................: 192.168.10.1
 
-Bluetooth Connection:
 
-   Connection-specific DNS Suffix..: 
-   Link-local IPv6 Address.........: ::
-   IPv6 Address....................: ::
-   IPv4 Address....................: 0.0.0.0
-   Subnet Mask.....................: 0.0.0.0
-   Default Gateway.................: ::
-                                     0.0.0.0
+C:<span style=color:#ae81ff>\&gt;</span>ping 192.168.20.1
 
-C:\&gt;ping 192.168.20.1
+Pinging 192.168.20.1 with <span style=color:#ae81ff>32</span> bytes of data:
 
-Pinging 192.168.20.1 with 32 bytes of data:
+Reply from 192.168.20.1: bytes<span style=color:#f92672>=</span><span style=color:#ae81ff>32</span> time<span style=color:#f92672>=</span>2ms TTL<span style=color:#f92672>=</span><span style=color:#ae81ff>253</span>
+Reply from 192.168.20.1: bytes<span style=color:#f92672>=</span><span style=color:#ae81ff>32</span> time<span style=color:#f92672>=</span>5ms TTL<span style=color:#f92672>=</span><span style=color:#ae81ff>253</span>
+Reply from 192.168.20.1: bytes<span style=color:#f92672>=</span><span style=color:#ae81ff>32</span> time<span style=color:#f92672>=</span>4ms TTL<span style=color:#f92672>=</span><span style=color:#ae81ff>253</span>
+Reply from 192.168.20.1: bytes<span style=color:#f92672>=</span><span style=color:#ae81ff>32</span> time<span style=color:#f92672>=</span>5ms TTL<span style=color:#f92672>=</span><span style=color:#ae81ff>253</span>
 
-Reply from 192.168.20.1: bytes=32 time=2ms TTL=253
-Reply from 192.168.20.1: bytes=32 time=5ms TTL=253
-Reply from 192.168.20.1: bytes=32 time=4ms TTL=253
-Reply from 192.168.20.1: bytes=32 time=5ms TTL=253
-
-Ping statistics for 192.168.20.1:
-    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Ping statistics <span style=color:#66d9ef>for</span> 192.168.20.1:
+    Packets: Sent <span style=color:#f92672>=</span> 4, Received <span style=color:#f92672>=</span> 4, Lost <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span> <span style=color:#f92672>(</span>0% loss<span style=color:#f92672>)</span>,
 Approximate round trip times in milli-seconds:
-    Minimum = 2ms, Maximum = 5ms, Average = 4ms
-</code></pre>
+    Minimum <span style=color:#f92672>=</span> 2ms, Maximum <span style=color:#f92672>=</span> 5ms, Average <span style=color:#f92672>=</span> 4ms
+</code></pre></div>
 </div>
 <footer class=post-footer>
 <ul class=post-tags>

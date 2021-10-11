@@ -17,14 +17,14 @@ type: post
 Artikel ini akan membahas bagaimana mengkonfigurasi ppp pada `cisco packet tracer` menggunakan authentikasi `pap` dan `chap`
 dan sebagai tambahan koneksi koneksi yang melewati network yang bebeda akan di cover oleh routing `ospf`.
 
-## Detail 
+## Skema
 * r1 Se2/0 10.0.0.1/8, Fa0/0 192.168.10.0/24
 * r2 Se2/0 10.0.0.2/8, Se3/0 20.0.0.2/8
 * r3 Se3/0 20.0.0.1/8, Fa0/0, 192.168.20.0/24
 * pc-aidil-1 192.168.10.2/24
 * pc-aidil-2 192.168.20.2/24
 
-## Skema
+## Detail
 * Koneksi dari r1 ke r2 menggunakan authentikasi `pap` (clear text)
 * Koneksi dari r3 ke r2 menggunakan authentikasi `chap` (encrypted text)
 * Koneksi antar router menggunakan kabel `serial DCE`
@@ -34,11 +34,11 @@ dan sebagai tambahan koneksi koneksi yang melewati network yang bebeda akan di c
 * Password chap "ppp-chap"
 
 Dari tabel diatas kita akan menerapkan 2 tipe authentikasi PPP r1 se2/0 –> r2 se2/0 dengan authentikasi PAP dan r2 se3/0 –> r3 se3/0 dengan authentikasi CHAP.
-Setelah koneksi PPP berhasil dibuat, yang perlu dilakukan adalah melakukan routing (ospf) agar antar `client` yang berbeda network bisa saling terhubung.
+Setelah koneksi PPP berhasil dibuat, yang perlu dilakukan adalah melakukan routing (ospf) agar antar client yang berbeda network bisa saling terhubung.
 
 ## Konfigurasi
 Untuk mengkonfigurasi router silahkan klik icon router dan masuk ke menu `CLI` dan ikuti langkah berikut.
-```console
+```bash
 #
 # Konfigurasi router r1
 #
@@ -88,7 +88,7 @@ r2(config)#
 ```
 
 Keluar dan masuk ke router r3
-```console
+```bash
 Router>enable
 Router#configure terminal
 Router(config)#hostname r3
@@ -107,8 +107,8 @@ r3(config-if)#exit
 r3(config)#
 ```
 
-Sampai disini konfigurasi PPP sudah selesai dan tinggal melakukan verifikasi. Untuk memastikan protocol encapsulationnya sudah menjadi PPP silahkan masuk ke router dan lihat status interface nya.
-```console
+Sampai disini konfigurasi PPP sudah selesai dan tinggal melakukan verifikasi apakah konfigurasi PPP kita sudah berhasil.. Untuk memastikan protocol encapsulationnya sudah menjadi PPP silahkan masuk ke router dan lihat status interface nya.
+```bash
 r1>show interfaces se2/0
 Serial2/0 is up, line protocol is up (connected)
   Hardware is HD64570
@@ -123,7 +123,7 @@ Serial2/0 is up, line protocol is up (connected)
 
 Selanjutnya kita akan mengkonfigurasi routing `ospf` agar pc-aidil-1 (192.168.10.2/24) dan pc-aidil-2 (192.168.20.2) bisa saling terhubung.
 
-```console
+```bash
 #
 # Konfigruasi router r1
 #
@@ -139,7 +139,7 @@ Building configuration…
 ```
 
 Keluar dan masuk ke router r2
-```console
+```bash
 #
 # Konfigruasi router r2
 #
@@ -155,7 +155,7 @@ Building configuration…
 ```
 
 Keluar dan masuk ke router r3
-```console
+```bash
 #
 # Konfigruasi router r2
 #
@@ -172,32 +172,24 @@ Building configuration…
 
 Untuk routing `ospf` telah selesai di konfigurasi, kita bisa melakukan pengecekan dengan cara masuk ke router r1 dan lihat apakah prefix router r2 (192.168.20.0/24) telah dimiliki oleh routerr1
 
-```console
+```bash
 r1>show ip route  | include 192.168.20
 O    192.168.20.0/24 [110/129] via 10.0.0.2, 00:23:23, Serial2/0
 ```
 Dilihat dari tabel routing di atas saat ini router r1 telah memiliki prefx 192.168.20.0/24 dengan flag `O` dimana arti nya prefix tersebut di dapat dari routing dinamis `ospf` yang arti nya konfigurasi `ospf` telah berhasil.
 
 Terakhir tinggal pastikan bahwa pc-aidil-1 sudah bisa melakukan ping ke pc-aidil-2 dengan cara masuk ke `command prompt`
-```console
+```bash
+C:\>ipconfig
 
+FastEthernet0 Connection:(default port)
    Connection-specific DNS Suffix..: 
    Link-local IPv6 Address.........: FE80::202:4AFF:FE32:1362
    IPv6 Address....................: ::
    IPv4 Address....................: 192.168.10.2
    Subnet Mask.....................: 255.255.255.0
-   Default Gateway.................: ::
-                                     192.168.10.1
+   Default Gateway.................: 192.168.10.1
 
-Bluetooth Connection:
-
-   Connection-specific DNS Suffix..: 
-   Link-local IPv6 Address.........: ::
-   IPv6 Address....................: ::
-   IPv4 Address....................: 0.0.0.0
-   Subnet Mask.....................: 0.0.0.0
-   Default Gateway.................: ::
-                                     0.0.0.0
 
 C:\>ping 192.168.20.1
 

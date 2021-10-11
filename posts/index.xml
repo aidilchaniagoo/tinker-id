@@ -5,7 +5,16 @@
     <link>/posts/</link>
     <description>Recent content in Posts on Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 09 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cara Konfigurasi Ppp Pada Cisco Packet Tracer Menggunakan Pap Dan Chap</title>
+      <link>/2021/10/11/cara-konfigurasi-ppp-pada-cisco-packet-tracer-menggunakan-pap-dan-chap/</link>
+      <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/10/11/cara-konfigurasi-ppp-pada-cisco-packet-tracer-menggunakan-pap-dan-chap/</guid>
+      <description>Artikel sederhana ayng akan membahas bagaimana mengkonfigurasi ppp</description>
+    </item>
+    
     <item>
       <title>Cara install Winbox pada macOS</title>
       <link>/2021/10/09/cara-install-winbox-pada-macos/</link>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Personal Blog</title>
-    <link>/</link>
-    <description>Recent content on Personal Blog</description>
+    <title>pap on Personal Blog</title>
+    <link>/tags/pap/</link>
+    <description>Recent content in pap on Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 11 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/pap/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cara Konfigurasi Ppp Pada Cisco Packet Tracer Menggunakan Pap Dan Chap</title>
       <link>/2021/10/11/cara-konfigurasi-ppp-pada-cisco-packet-tracer-menggunakan-pap-dan-chap/</link>
@@ -13,15 +13,6 @@
       
       <guid>/2021/10/11/cara-konfigurasi-ppp-pada-cisco-packet-tracer-menggunakan-pap-dan-chap/</guid>
       <description>Artikel sederhana ayng akan membahas bagaimana mengkonfigurasi ppp</description>
-    </item>
-    
-    <item>
-      <title>Cara install Winbox pada macOS</title>
-      <link>/2021/10/09/cara-install-winbox-pada-macos/</link>
-      <pubDate>Sat, 09 Oct 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/2021/10/09/cara-install-winbox-pada-macos/</guid>
-      <description>Secara default winbox hanya bisa di jalankan di sistem operasi Windows. Namun kita tetap bisa menggunakan nya pada macOS dengan menggunakan wine.</description>
     </item>
     
   </channel>

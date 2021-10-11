@@ -5,7 +5,52 @@
     <link>/tags/</link>
     <description>Recent content in Tags on Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 09 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>chap</title>
+      <link>/tags/chap/</link>
+      <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/chap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cisco packet tracer</title>
+      <link>/tags/cisco-packet-tracer/</link>
+      <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/cisco-packet-tracer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ospf</title>
+      <link>/tags/ospf/</link>
+      <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ospf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pap</title>
+      <link>/tags/pap/</link>
+      <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/pap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ppp</title>
+      <link>/tags/ppp/</link>
+      <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ppp/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>big-sur</title>
       <link>/tags/big-sur/</link>

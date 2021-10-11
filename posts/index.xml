@@ -7,12 +7,13 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 11 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Cara Konfigurasi Ppp Pada Cisco Packet Tracer Menggunakan Pap Dan Chap</title>
+      <title>Cara Konfigurasi ppp pada Cisco Packet Tracer menggunakan pap dan chap</title>
       <link>/2021/10/11/cara-konfigurasi-ppp-pada-cisco-packet-tracer-menggunakan-pap-dan-chap/</link>
       <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>/2021/10/11/cara-konfigurasi-ppp-pada-cisco-packet-tracer-menggunakan-pap-dan-chap/</guid>
-      <description>Artikel sederhana ayng akan membahas bagaimana mengkonfigurasi ppp</description>
+      <description>Artikel ini akan membahas bagaimana mengkonfigurasi ppp pada cisco packet tracer menggunakan authentikasi pap dan chap dan sebagai tambahan koneksi koneksi yang melewati network yang bebeda akan di cover oleh routing ospf.
+Detail  r1 Se2/0 10.0.0.1/8, Fa0/0 192.168.10.0/24 r2 Se2/0 10.0.0.2/8, Se3/0 20.0.0.2/8 r3 Se3/0 20.0.0.1/8, Fa0/0, 192.168.20.0/24 pc-aidil-1 192.168.10.2/24 pc-aidil-2 192.168.20.2/24  Skema  Koneksi dari r1 ke r2 menggunakan authentikasi pap (clear text) Koneksi dari r3 ke r2 menggunakan authentikasi chap (encrypted text) Koneksi antar router menggunakan kabel serial DCE Koneksi dari router ke switch dan dari switch ke pc menggunakan kabel Straight Switch menggunakan mode access (vlan 1) Password pap &amp;ldquo;ppp-pap&amp;rdquo; Password chap &amp;ldquo;ppp-chap&amp;rdquo;  Dari tabel diatas kita akan menerapkan 2 tipe authentikasi PPP r1 se2/0 –&amp;gt; r2 se2/0 dengan authentikasi PAP dan r2 se3/0 –&amp;gt; r3 se3/0 dengan authentikasi CHAP.</description>
     </item>
     
     <item>

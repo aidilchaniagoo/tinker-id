@@ -2,79 +2,79 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Personal Blog</title>
-    <link>/tags/</link>
+    <link>https://tinker.id/tags/</link>
     <description>Recent content in Tags on Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 11 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://tinker.id/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>chap</title>
-      <link>/tags/chap/</link>
+      <link>https://tinker.id/tags/chap/</link>
       <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>/tags/chap/</guid>
+      <guid>https://tinker.id/tags/chap/</guid>
       <description></description>
     </item>
     
     <item>
       <title>cisco packet tracer</title>
-      <link>/tags/cisco-packet-tracer/</link>
+      <link>https://tinker.id/tags/cisco-packet-tracer/</link>
       <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>/tags/cisco-packet-tracer/</guid>
+      <guid>https://tinker.id/tags/cisco-packet-tracer/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ospf</title>
-      <link>/tags/ospf/</link>
+      <link>https://tinker.id/tags/ospf/</link>
       <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>/tags/ospf/</guid>
+      <guid>https://tinker.id/tags/ospf/</guid>
       <description></description>
     </item>
     
     <item>
       <title>pap</title>
-      <link>/tags/pap/</link>
+      <link>https://tinker.id/tags/pap/</link>
       <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>/tags/pap/</guid>
+      <guid>https://tinker.id/tags/pap/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ppp</title>
-      <link>/tags/ppp/</link>
+      <link>https://tinker.id/tags/ppp/</link>
       <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>/tags/ppp/</guid>
+      <guid>https://tinker.id/tags/ppp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>big-sur</title>
-      <link>/tags/big-sur/</link>
+      <link>https://tinker.id/tags/big-sur/</link>
       <pubDate>Sat, 09 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>/tags/big-sur/</guid>
+      <guid>https://tinker.id/tags/big-sur/</guid>
       <description></description>
     </item>
     
     <item>
       <title>macos</title>
-      <link>/tags/macos/</link>
+      <link>https://tinker.id/tags/macos/</link>
       <pubDate>Sat, 09 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>/tags/macos/</guid>
+      <guid>https://tinker.id/tags/macos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>wine</title>
-      <link>/tags/wine/</link>
+      <link>https://tinker.id/tags/wine/</link>
       <pubDate>Sat, 09 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>/tags/wine/</guid>
+      <guid>https://tinker.id/tags/wine/</guid>
       <description></description>
     </item>
     
